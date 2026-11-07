@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FIRE工作室 · 官方网站</title>
+<meta name="description" content="FIRE工作室：独立游戏开发团队，在 TapTap 制作并发布游戏。用心做游戏，希望能给大家带来快乐。">
+<link rel="icon" href="img/favicon.png">
+<style>
+:root{--bg:#121a2e;--bg2:#18223b;--card:#1f2a46;--fire1:#ff4d1f;--fire2:#ff9a1f;--fire3:#ffd34d;--text:#eef1f8;--muted:#9aa6c2}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;line-height:1.7}
+a{color:var(--fire2);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:9;background:rgba(18,26,46,.88);backdrop-filter:blur(8px);border-bottom:1px solid #ffffff12}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+nav .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:1px;color:var(--text)}
+nav .brand img{width:34px;height:34px;border-radius:8px}
+nav .links a{color:var(--muted);margin-left:22px;font-size:15px}
+nav .links a:hover{color:var(--text);text-decoration:none}
+.hero{position:relative;overflow:hidden;padding:90px 0 80px;text-align:center;background:radial-gradient(ellipse at 50% 120%,#ff6a1f33 0,transparent 60%),radial-gradient(ellipse at 50% -20%,#2a3a66 0,transparent 70%)}
+.hero img{width:180px;height:180px;border-radius:32px;box-shadow:0 20px 60px #ff5a1f44,0 0 0 1px #ffffff14}
+.hero h1{font-size:46px;margin:28px 0 6px;letter-spacing:2px}
+.hero h1 span{background:linear-gradient(90deg,var(--fire1),var(--fire2),var(--fire3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);font-size:18px;margin:0 auto;max-width:560px}
+.btn{display:inline-block;margin-top:30px;padding:12px 30px;border-radius:999px;background:linear-gradient(90deg,var(--fire1),var(--fire2));color:#fff;font-weight:700;box-shadow:0 8px 24px #ff5a1f55}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ember{position:absolute;bottom:-10px;width:6px;height:6px;border-radius:50%;background:var(--fire2);opacity:.0;animation:rise 7s linear infinite}
+@keyframes rise{0%{transform:translateY(0) scale(1);opacity:0}10%{opacity:.9}100%{transform:translateY(-420px) scale(.3);opacity:0}}
+section{padding:70px 0}
+section.alt{background:var(--bg2)}
+h2{font-size:30px;margin:0 0 8px;text-align:center}
+.sub{color:var(--muted);text-align:center;margin:0 0 40px}
+.values{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.value{background:var(--card);border-radius:18px;padding:26px;border:1px solid #ffffff0d}
+.value b{display:block;font-size:19px;margin:10px 0 6px}
+.value .ico{font-size:30px}
+.value p{margin:0;color:var(--muted);font-size:15px}
+.games{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px}
+.game{background:var(--card);border-radius:18px;overflow:hidden;border:1px solid #ffffff0d;transition:transform .2s}
+.game:hover{transform:translateY(-4px)}
+.game .cover{aspect-ratio:1;width:100%;display:block;object-fit:cover}
+.game .ph{aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:56px;font-weight:900;color:#fff;background:linear-gradient(135deg,#ff4d1f,#ff9a1f 55%,#ffd34d)}
+.game .ph.b{background:linear-gradient(135deg,#3a4fd8,#7a5cff 55%,#ff8ad8)}
+.game .ph.c{background:linear-gradient(135deg,#0fa58c,#2bc6e8 55%,#9cf0ff)}
+.game .ph.d{background:linear-gradient(135deg,#7b2ff7,#c03dd8 55%,#ff9a6b)}
+.game .info{padding:16px 18px 18px}
+.game h3{margin:0 0 4px;font-size:17px;line-height:1.4}
+.game .tag{color:var(--muted);font-size:14px;margin:0 0 10px}
+.game .more{font-size:13px}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.contact .value p{font-size:16px;color:var(--text)}
+footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid #ffffff12}
+@media(max-width:600px){.hero h1{font-size:34px}.hero img{width:140px;height:140px}nav .links a{margin-left:14px;font-size:14px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="#"><img src="img/logo.png" alt="FIRE工作室">FIRE工作室</a>
+  <div class="links"><a href="#about">关于我们</a><a href="#games">作品</a><a href="#contact">联系我们</a></div>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <img src="img/logo.png" alt="FIRE工作室 Logo">
+    <h1><span>FIRE</span>工作室</h1>
+    <p>用心做游戏，希望能给大家带来快乐。</p>
+    <a class="btn" href="#games">看看我们的游戏</a>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2>关于我们</h2>
+    <p class="sub">一支热爱游戏的独立开发团队，作品发布在 TapTap（TapTap 制造）</p>
+    <div class="values">
+      <div class="value"><div class="ico">🔥</div><b>保持热爱</b><p>做自己也想玩的游戏，每一个玩法都先自己玩到停不下来。</p></div>
+      <div class="value"><div class="ico">🎮</div><b>轻松上手</b><p>打开就能玩，几分钟一局，碎片时间也能获得完整的快乐。</p></div>
+      <div class="value"><div class="ico">💬</div><b>听玩家的</b><p>认真看每一条评价和论坛留言，持续更新、修复和打磨。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="games">
+  <div class="wrap">
+    <h2>我们的作品</h2>
+    <p class="sub">在 TapTap 搜索游戏名即可游玩</p>
+    <div class="games">
+      <div class="game"><img class="cover" src="img/timid.jpg" alt="胆小骑士"><div class="info"><h3>胆小骑士：一手牌杀穿地牢</h3><p class="tag">卡牌 · 地牢冒险</p><a class="more" href="https://zwluoqi.github.io/melon-lab-support/timidknight/privacy.html">隐私政策</a></div></div>
+      <div class="game"><div class="ph b">牌</div><div class="info"><h3>命运牌：九重奏</h3><p class="tag">卡牌 · 计分构筑</p><a class="more" href="https://zwluoqi.github.io/melon-lab-support/jokergirls/privacy.html">隐私政策</a></div></div>
+      <div class="game"><div class="ph c">巅</div><div class="info"><h3>峡谷之巅：从网吧到世界冠军</h3><p class="tag">电竞 · 卡牌养成</p><a class="more" href="https://zwluoqi.github.io/melon-lab-support/xiaguzhidian/privacy.html">隐私政策</a></div></div>
+      <div class="game"><div class="ph d">法</div><div class="info"><h3>手搓魔法：从小火球到灭世禁咒</h3><p class="tag">魔法 · 成长</p><a class="more" href="https://zwluoqi.github.io/melon-lab-support/shoucuo/privacy.html">隐私政策</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>联系我们</h2>
+    <p class="sub">有任何问题、建议或合作意向，欢迎联系</p>
+    <div class="contact">
+      <div class="value"><div class="ico">✉️</div><b>邮箱</b><p><a href="mailto:1067194965@qq.com">1067194965@qq.com</a></p></div>
+      <div class="value"><div class="ico">🎯</div><b>TapTap</b><p>在游戏详情页的评价区或论坛留言，我们都会看到。</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 FIRE工作室 · All rights reserved.</footer>
+
+<script>
+const h=document.querySelector('.hero');
+for(let i=0;i<22;i++){const e=document.createElement('span');e.className='ember';e.style.left=(Math.random()*100)+'%';e.style.animationDelay=(Math.random()*7)+'s';e.style.animationDuration=(5+Math.random()*4)+'s';const s=3+Math.random()*5;e.style.width=e.style.height=s+'px';e.style.background=['#ff4d1f','#ff9a1f','#ffd34d'][i%3];h.appendChild(e)}
+</script>
+</body>
+</html>
