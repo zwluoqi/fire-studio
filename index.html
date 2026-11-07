@@ -50,6 +50,14 @@ h2{font-size:30px;margin:0 0 8px;text-align:center}
 .game h3{margin:0 0 4px;font-size:17px;line-height:1.4}
 .game .tag{color:var(--muted);font-size:14px;margin:0 0 10px}
 .game .more{font-size:13px}
+.game{position:relative}
+.game a.go{display:block;color:inherit}
+.game a.go:hover{text-decoration:none}
+.game a.go:hover .tt{color:var(--fire3)}
+.game .badge{position:absolute;top:12px;left:12px;z-index:2;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#fff;background:linear-gradient(90deg,var(--fire1),var(--fire2));box-shadow:0 2px 8px #0006}
+.game .tt{display:inline-block;font-size:14px;font-weight:700;color:var(--fire2)}
+.game .info{padding-bottom:6px}
+.game .more{display:block;padding:0 18px 16px;font-size:12px;color:var(--muted)}
 .contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
 .contact .value p{font-size:16px;color:var(--text)}
 footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid #ffffff12}
@@ -86,12 +94,12 @@ footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:14px;b
 <section class="alt" id="games">
   <div class="wrap">
     <h2>我们的作品</h2>
-    <p class="sub">在 TapTap 搜索游戏名即可游玩</p>
+    <p class="sub">点击游戏即可前往 TapTap 商店页</p>
     <div class="games">
-      <div class="game"><img class="cover" src="img/timid.jpg" alt="胆小骑士"><div class="info"><h3>胆小骑士：一手牌杀穿地牢</h3><p class="tag">卡牌 · 地牢冒险</p><a class="more" href="https://zwluoqi.github.io/melon-lab-support/timidknight/privacy.html">隐私政策</a></div></div>
-      <div class="game"><div class="ph b">牌</div><div class="info"><h3>命运牌：九重奏</h3><p class="tag">卡牌 · 计分构筑</p><a class="more" href="https://zwluoqi.github.io/melon-lab-support/jokergirls/privacy.html">隐私政策</a></div></div>
-      <div class="game"><div class="ph c">巅</div><div class="info"><h3>峡谷之巅：从网吧到世界冠军</h3><p class="tag">电竞 · 卡牌养成</p><a class="more" href="https://zwluoqi.github.io/melon-lab-support/xiaguzhidian/privacy.html">隐私政策</a></div></div>
-      <div class="game"><div class="ph d">法</div><div class="info"><h3>手搓魔法：从小火球到灭世禁咒</h3><p class="tag">魔法 · 成长</p><a class="more" href="https://zwluoqi.github.io/melon-lab-support/shoucuo/privacy.html">隐私政策</a></div></div>
+      <div class="game"><a class="go" href="https://www.taptap.cn/app/1003351" target="_blank" rel="noopener"><span class="badge">测试中</span><img class="cover" src="img/game_1003351.jpg" alt="胆小骑士：一手牌杀穿地牢"><div class="info"><h3>胆小骑士：一手牌杀穿地牢</h3><p class="tag">卡牌 · 地牢冒险</p><span class="tt">前往 TapTap ›</span></div></a><a class="more" href="https://zwluoqi.github.io/melon-lab-support/timidknight/privacy.html">隐私政策</a></div>
+      <div class="game"><a class="go" href="https://www.taptap.cn/app/1003219" target="_blank" rel="noopener"><span class="badge">测试中</span><img class="cover" src="img/game_1003219.jpg" alt="命运牌：九重奏"><div class="info"><h3>命运牌：九重奏</h3><p class="tag">卡牌 · 计分构筑</p><span class="tt">前往 TapTap ›</span></div></a><a class="more" href="https://zwluoqi.github.io/melon-lab-support/jokergirls/privacy.html">隐私政策</a></div>
+      <div class="game"><a class="go" href="https://www.taptap.cn/app/1029298" target="_blank" rel="noopener"><span class="badge">预约中</span><img class="cover" src="img/game_1029298.jpg" alt="峡谷之巅：从网吧到世界冠军"><div class="info"><h3>峡谷之巅：从网吧到世界冠军</h3><p class="tag">电竞 · 卡牌养成</p><span class="tt">前往 TapTap ›</span></div></a><a class="more" href="https://zwluoqi.github.io/melon-lab-support/xiaguzhidian/privacy.html">隐私政策</a></div>
+      <div class="game"><a class="go" href="https://www.taptap.cn/app/1026165" target="_blank" rel="noopener"><span class="badge">预约中</span><img class="cover" src="img/game_1026165.jpg" alt="手搓魔法：从小火球到灭世禁咒"><div class="info"><h3>手搓魔法：从小火球到灭世禁咒</h3><p class="tag">魔法 · 卡牌构筑</p><span class="tt">前往 TapTap ›</span></div></a><a class="more" href="https://zwluoqi.github.io/melon-lab-support/shoucuo/privacy.html">隐私政策</a></div>
     </div>
   </div>
 </section>
